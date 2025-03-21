@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import { FaTrash } from "react-icons/fa";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -53,6 +54,7 @@ function App() {
           id="todo-input"
           onChange={(event) => setTodoInput(event.target.value)}
           value={todoInput}
+          placeholder="Add Todo..."
         />
         <button onClick={addTodo}>Add Todo</button>
       </div>
@@ -68,7 +70,7 @@ function App() {
               <button onClick={() => toggleComplete(todo.id)}>
                 {todo.completed ? "Mark as incomplete" : "Mark as complete"}
               </button>
-              <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+              <button onClick={() => deleteTodo(todo.id)}><FaTrash/></button>
             </div>
           );
         })}

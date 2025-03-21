@@ -6,8 +6,8 @@
 
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: rgb(19, 19, 19);
-  color: rgb(234, 234, 234);
+  background-color: #fffefe;
+  color: black;
 }
 
 h1 {
@@ -17,6 +17,14 @@ h1 {
 
 button {
   cursor: pointer;
+  background-color: blue;
+  border: none;
+  color: white;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: rgb(69, 69, 73);
 }
 
 .todos-input-wrapper {
@@ -24,6 +32,17 @@ button {
   align-items: center;
   justify-content: center;
   gap: 2vw;
+  background-color: rgb(189, 183, 183);
+  padding: 30px;
+  margin-left: 450px;
+  margin-right: 450px;
+  border-radius: 10px;
+  box-shadow: 20px;
+}
+
+#todo-input {
+  border: none;
+  border-radius: 10px;
 }
 
 .todos-input-wrapper input,
@@ -56,9 +75,12 @@ button {
 }
 
 .completed {
-  color: rgb(61, 174, 61);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+  padding-left: 200px;
 }
 
 .incomplete {
-  color: rgb(255, 106, 0);
+  color: black;
+  padding-left: 200px;
 }
